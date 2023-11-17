@@ -48,7 +48,8 @@ class FormDataExample extends Component {
     formData.append('glimage', this.state.selectedImage);
 
     // Make a POST request to your Spring Boot API.
-    fetch('https://192.168.0.179:8080/AccountsReceivable', {
+    fetch('http://localhost:8080/AccountsReceivable', {
+        referrerPolicy: "no-referrer",
         method: 'POST',
         body: formData
     })
@@ -82,10 +83,15 @@ class FormDataExample extends Component {
     return (
       <div className="accounts-receivables">
       <div className="transaction-form">
-       <div className="accounts-receivables"><h2>ACCOUNTS RECEIVABLES - Changed </h2></div>
+       <div className="accounts-receivables"><h2>ACCOUNTS RECEIVABLES </h2></div>
          <form onSubmit={this.handleSubmit}>
           <div className="form-group">
             <label htmlFor="glreceiptchequeno"><b> Cheque/Receipt No:</b></label>
+             <meta http-equiv="Content-Security-Policy" content="default-src 'self';
+              img-src data: https: ;
+              script-src 'self' 'unsafe-inline';
+              style-src 'self' 'unsafe-inline'; "/>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
             <input className="form-control"
               type="text"
               id="glreceiptchequeno"
