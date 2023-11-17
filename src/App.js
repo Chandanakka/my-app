@@ -80,7 +80,7 @@ class FormDataExample extends Component {
   render() {
 
     return (
-      <div className="accounts-receivables">
+      <div className="accounts-receivables - Changed">
       <div className="transaction-form">
        <div className="accounts-receivables"><h2>ACCOUNTS RECEIVABLES</h2></div>
          <form onSubmit={this.handleSubmit}>
