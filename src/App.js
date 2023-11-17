@@ -59,7 +59,7 @@ class FormDataExample extends Component {
         }
         return response.toString();
     })
-            .then(data => {this.setState({  message: 'All Good - Inserted Account Payable!!' });
+            .then(data => {this.setState({  message: 'All Good - Inserted Account Receivable!!' });
             })
             .catch(error => {console.error('Fetch error:', error);this.setState({ message: 'All is not Good-2!' + error});
                 console.error('Fetch error:', error);
