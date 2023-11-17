@@ -51,6 +51,7 @@ class FormDataExample extends Component {
     fetch('http://localhost:8080/AccountsReceivable', {
         referrerPolicy: "no-referrer",
         method: 'POST',
+        mode:  'cors',
         body: formData
     })
             .then(response => { this.setState({ message: 'All Good-1!' });
