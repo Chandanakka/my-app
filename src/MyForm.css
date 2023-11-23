@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 
-.transaction-form button1 {
+.transaction-form Button1 {
   padding: 10px;
   font-size: 24px;
   text-align: left;
@@ -50,7 +50,7 @@
   transition-duration: 0.4s;
 }
 
-.transaction-form button1:active {
+.transaction-form Button1:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -80,10 +80,16 @@
   transition-duration: 0.4s;
 }
 
-.transaction-form button:hover {
+.transaction-form button1:hover {
   background-color: #0056b3;
 }
-.inline-button {
+.inline-button1 {
+  display: inline-block;
+}
+.transaction-form button2:hover {
+  background-color: #0056b3;
+}
+.inline-button2  {
   display: inline-block;
 }
 
